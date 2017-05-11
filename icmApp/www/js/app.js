@@ -3,7 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('starter', ['ionic'])
+angular.module('icm', ['ionic','ngSanitize'])
 
 
 .factory('blogFactory', function($q,$http){
@@ -21,7 +21,7 @@ angular.module('starter', ['ionic'])
 
 })
 
-.controller('appCtrl', function($scope,  $ionicModal, blogFactory){
+.controller('icmCtrl', function($scope,  $ionicModal, blogFactory){
   $scope.posts = [];
   $scope.getAllPosts = function(){
     blogFactory.getAllPosts().then(function(data){
