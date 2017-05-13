@@ -1,0 +1,14 @@
+<ion-view view-title="Avisos" ng-controller="icmCtrl" ng-init="getAvisos()">
+    <ion-content class="padding">
+        <ion-refresher pulling-text="Pull to refresh" on-refresh="icmCtrl.refresh('avisos')"></ion-refresher>
+        <ion-refresher-content>
+            <div class="list card" ng-repeat="aviso in avisos.data">
+                <div class="item item-divider">{{aviso.title.rendered}}</div>
+                <div class="item item-body">
+                    <div ng-bind-html="aviso.content.rendered"></div>
+                </div>
+            </div>
+        </ion-refresher-content>
+        <ion-infinite-scroll immediate-check="true" on-infinite="icmCtrl.loadMore('avisos')"></ion-infinite-scroll>
+    </ion-content>
+</ion-view>

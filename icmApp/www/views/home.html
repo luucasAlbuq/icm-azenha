@@ -8,32 +8,42 @@
 
         <div class="row padding text-center">
             <div class="col-50 icm-grid-main-menu">
-                <button class="button button-block button-light">
-                <img class="button button-icon" src="img/icons/avisos.png">
-                <br> Avisos </br>
-            </button>
-                <button class="button button-block button-light">
-                <img class="button button-icon" src="img/icons/igrejas.png">
-                <br> Igrejas </br>
-            </button>
-                <button class="button button-block button-light">
-                <img class="button button-icon" src="img/icons/ao_vivo.png">
-                <br> Ao Vivo </br>
-            </button>
+                <!-- Avisos -->
+                <button class="button button-block button-light" ng-click="rediretTo('/avisos')" >
+                    <img class="button button-icon" src="img/icons/avisos.png">
+                    <br> Avisos </br>
+                </button>
+
+                <!-- Igrejas -->
+                <button class="button button-block button-light" ng-click="rediretTo('/igrejas')">
+                    <img class="button button-icon" src="img/icons/igrejas.png">
+                    <br> Igrejas </br>
+                </button>
+
+                <!-- Ao Vivo -->
+                <button class="button button-block button-light" ng-click="rediretTo('/ao_vivo')">
+                    <img class="button button-icon" src="img/icons/ao_vivo.png">
+                    <br> Ao Vivo </br>
+                </button>
             </div>
             <div class="col-50 icm-grid-main-menu">
-                <button class="button button-block button-light">
-                <img class="button button-icon" src="img/icons/inscricoes.png">
-                <br> Inscrições </br>
-            </button>
-                <button class="button button-block button-light">
-                <img class="button button-icon" src="img/icons/membros.png">
-                <br> Membros </br>
-            </button>
-                <button class="button button-block button-light">
-                <img class="button button-icon" src="img/icons/radio.png">
-                <br> Rádio </br>
-            </button>
+                <!-- Inscricoes -->
+                <button class="button button-block button-light" ng-click="rediretTo('/inscricoes')">
+                    <img class="button button-icon" src="img/icons/inscricoes.png">
+                    <br> Inscrições </br>
+                </button>
+
+                <!-- Membros -->
+                <button class="button button-block button-light" ng-click="rediretTo('/membros')">
+                    <img class="button button-icon" src="img/icons/membros.png">
+                    <br> Membros </br>
+                </button>
+
+                <!-- Radio -->
+                <button class="button button-block button-light" ng-click="rediretTo('/radio')">
+                    <img class="button button-icon" src="img/icons/radio.png">
+                    <br> Rádio </br>
+                </button>
             </div>
         </div>
     </ion-content>

@@ -17,6 +17,7 @@
   <!-- ionic/angularjs js -->
   <script src="lib/ionic/js/ionic.bundle.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-sanitize.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
 
   <!-- cordova script (this will be a 404 during development) -->
   <script src="cordova.js"></script>
@@ -27,8 +28,9 @@
 
 <body ng-app="icm">
   <ion-pane ng-controller="icmCtrl">
-     <div ng-include="'views/home.html'"></div>
+     <div ng-view href="#/"></div>
   </ion-pane>
+  
 </body>
 
 </html>
